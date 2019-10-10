@@ -1,0 +1,31 @@
+@startuml
+interface CategoryItemRenderer
+interface CategoryDataset
+abstract AbstractCategoryItemRenderer
+class CategoryPlot {
+    ObjectList datasets;
+    ObjectList renderers;
+}
+class AbstractCategoryItemRenderer {
+	CategoryPlot plot;
+	LegendItemCollection getLegendItems();
+}
+class CategoryPlot {
+	setDataset(CategoryDataset dataset);
+	setRenderer(CategoryRenderer renderer);
+	CategoryDataset getDataset();
+	CategoryRenderer getRenderer();
+}
+class LegendItemCollection {
+	int getItemCount();
+	add(LegendItem item);
+	LegendItem get(int index);
+}
+AbstractCategoryItemRenderer --|> CategoryItemRenderer
+DefaultCategoryDataset --|> CategoryDataset
+AbstractCategoryItemRenderer --* CategoryPlot
+CategoryPlot --* CategoryDataset
+CategoryPlot --* CategoryItemRenderer
+AbstractCategoryItemRenderer --* LegendItemCollection
+LegendItemCollection --* LegendItem
+@enduml
