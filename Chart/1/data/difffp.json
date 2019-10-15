@@ -83,7 +83,7 @@
                 "relation": "==>"
             },
             {
-                "name": "(org.jfree.chart.renderer.AbstractRenderer.class$org$jfree$chart$event$RendererChangeListener == null)",
+                "name": "org.jfree.chart.renderer.AbstractRenderer.class$org$jfree$chart$event$RendererChangeListener == null",
                 "relation": "<==>"
             }
         ]
@@ -732,7 +732,7 @@
                 "relation": "==>"
             },
             {
-                "name": "(org.jfree.chart.renderer.AbstractRenderer.class$org$jfree$chart$event$RendererChangeListener has only one value)",
+                "name": "org.jfree.chart.renderer.AbstractRenderer.class$org$jfree$chart$event$RendererChangeListener has only one value",
                 "relation": "<==>"
             }
         ]
