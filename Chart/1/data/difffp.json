@@ -21,7 +21,9 @@
         { "name": "this.strokeList.objects[].getClass().getName() elements == null" }
         { "name": "this.strokeList.size == 0" }
         { "name": "this.strokeList.size == orig(this.strokeList.size)" }
-    ],
+    ]
+},
+{
     "name": "this.plot has only one value",
     "children": [
         { "name": "org.jfree.chart.axis.CategoryAnchor.END has only one value" }
