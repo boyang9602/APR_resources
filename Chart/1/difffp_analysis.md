@@ -1,4 +1,4 @@
-### [difffp](./data/difffp.json)[(visual)](https://observablehq.com/d/06c8d17ba1b86512) analysis
+### [difffp](./data/difffp.json)([visual](https://observablehq.com/d/06c8d17ba1b86512)) analysis
 
 #### `this.plot == null`
 1. (`this.plot == null`) ==> (`return.items[] == []`)  
