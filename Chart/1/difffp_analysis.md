@@ -9,7 +9,7 @@ In plausible version, only `this.plot == null` can lead to `return.items[] == []
 2. (`this.plot == null`)  ==>  (`this.paintList.objects[]` contains only nulls and has only one value, of length 8)  
 `this.paintList.objects[]` is initialized as an array, filled with 8 null  
 Both `this.plot == null` and `dataset == null` will make `getLegendItems return in advance`, which will keep `this.paintList.objects` unmodified. So same as **1**, plausible version has 2 possible reasons while fixed version only have 1 reason.  
-Other invariants related to `this.paintList`, `this.shapeList` are the same case `this.strokeList`  
+Other invariants related to `this.paintList`, `this.shapeList` and `this.strokeList` are the same case  
 
 3. (`this.plot == null`)  <==>  (`org.jfree.chart.renderer.AbstractRenderer.class$org$jfree$chart$event$RendererChangeListener == null`)  
 // TODO  
