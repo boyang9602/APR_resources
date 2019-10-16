@@ -21,6 +21,7 @@ class LegendItemCollection {
 	add(LegendItem item);
 	LegendItem get(int index);
 }
+LineAndShapeRenderer --|> AbstractCategoryItemRenderer
 AbstractCategoryItemRenderer --|> CategoryItemRenderer
 DefaultCategoryDataset --|> CategoryDataset
 AbstractCategoryItemRenderer --* CategoryPlot
