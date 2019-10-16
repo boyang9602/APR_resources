@@ -1,12 +1,11 @@
 @startuml
 interface CategoryItemRenderer
 interface CategoryDataset
-abstract AbstractCategoryItemRenderer
 class CategoryPlot {
     ObjectList datasets;
     ObjectList renderers;
 }
-class AbstractCategoryItemRenderer {
+abstract class AbstractCategoryItemRenderer {
 	CategoryPlot plot;
 	LegendItemCollection getLegendItems();
 }
@@ -17,11 +16,12 @@ class CategoryPlot {
 	CategoryRenderer getRenderer();
 }
 class LegendItemCollection {
+	List items;
 	int getItemCount();
 	add(LegendItem item);
 	LegendItem get(int index);
 }
-class AbstractRenderer {
+abstract class AbstractRenderer {
 	PaintList paintList;
 }
 LineAndShapeRenderer --|> AbstractCategoryItemRenderer
