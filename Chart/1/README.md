@@ -25,4 +25,4 @@ public void test2947660() {
     assertEquals("S1", lic.get(0).getLabel());
 }
 ```
-![uml](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/boyang9602/APR_resources/master/Chart/1/umls/test2947660.puml?t=0)
+![uml](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/boyang9602/APR_resources/master/Chart/1/umls/test2947660.puml?t=1)
