@@ -4,6 +4,7 @@ Chart project from defects4j, id: 1
 [fixed code](./codes/_fixed.md)  
 [plausible code](./codes/_plausible.md)  
 ### Diff between the invariants of fixed version and plausible version
+[difffp_analysis.md](./difffp_analysis.md)  
 ### Test case:
 ```java
 /**
