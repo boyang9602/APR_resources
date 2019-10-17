@@ -6,4 +6,4 @@
 
 ### Lang Project  
 
-- [1](./Lang/39/)
+- [39](./Lang/39/)
