@@ -15,7 +15,7 @@ The `searchList[i]` could be null, which does not have a `length()` method. The 
 - [plausible code](./codes/_plausible.md)  
 
 ### Test Case  
-In the test case, all assertion use default `repeat value` which is false.  
+In the test case, all assertion use default `repeat`'s value which is false.  
 ```java
 /**
  * Test method for 'StringUtils.replaceEach(String, String[], String[])'
