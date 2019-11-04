@@ -44,7 +44,7 @@ this.shapeList.increment == orig(this.shapeList.increment)
 1. `size(.*)` is one of the daikon's `keywork` to represents an array's size.  
 2. `.size` is a field of `AbstractObjectList` in `Chart` project and `PaintList`, `StrokeList`, ... inherits from the `AbstractObjectList`.  
 
-So between the buggy version and fixed version for `getLegendItems():::EXIT`, the main differences are about the `return.items`, one is always empty and another one could have value.   
+So I think it's actually no difference about the `paintList`, `strokeList` and `shapeList` between the buggy version and fixed version for `getLegendItems():::EXIT`, the main differences are about the `return.items`, one is always empty and another one could have value.   
 
 #### Has only one value:
 >The output ‘var has only one value’ in Daikon’s output means that every time that variable var was encountered, it had the same value. Daikon ordinarily reports the actual value, as in ‘var == 22’. Typically, the “has only one value” output means that the variable is a hashcode or address — that is, its declared type is ‘hashcode’ (see Variable declarations in Daikon Developer Manual). For example, ‘var == 0x38E8A’ is not very illuminating, but it is still interesting that var was never rebound to a different object.
