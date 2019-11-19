@@ -1,6 +1,6 @@
 # Closure
 Tried version 10f, `com.google.javascript.jscomp.PeepholeFoldConstantsTest` test.  
-Failed to generate invariants due to exception:
+Failed with Chicory due to exception:
 ```
 Exception in thread "main" java.lang.NoClassDefFoundError: com.google.common.base.CharMatcher
 	at java.lang.Class.getDeclaredConstructors0(Native Method)
