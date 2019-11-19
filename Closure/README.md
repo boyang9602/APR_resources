@@ -22,7 +22,56 @@ Exception in thread "main" java.lang.NoClassDefFoundError: com.google.common.bas
 	at junit.textui.TestRunner.start(TestRunner.java:180)
 	at junit.textui.TestRunner.main(TestRunner.java:138)
 ```
-Actually, as I manually checked, the class does exist in `guava.jar`. Not sure how the problem occurred.  
+### Checking measures:
+
+Manually checked, the class **does** exist in `guava.jar`.  
+
+It works well when I run the test directly:
+```
+$ java -cp build/classes/:build/test/:build/lib/rhino.jar:build/lib/rhino1_7R5pre/js.jar:lib/* junit.textui.TestRunner com.google.javascript.jscomp.PeepholeFoldConstantsTest
+.
+Time: 0.191
+
+OK (1 test)
+``` 
+It works well with daikon.DynComp:  
+```
+$ time java -Xmx12288M -cp build/classes/:build/test/:build/lib/rhino.jar:build/lib/rhino1_7R5pre/js.jar:lib/*:$DAIKONDIR/daikon.jar daikon.DynComp junit.textui.TestRunner com.google.javascript.jscomp.PeepholeFoldConstantsTest
+.
+Time: 287.206
+
+OK (1 test)
+
+
+real	4m52.357s
+user	5m12.866s
+sys	0m1.551s
+```
+I cannot reproduce it any more. It always fails with the below exception while I have already allocated the maximum memory I can (14G).
+```
+$ time java -Xmx14288M -cp build/classes/:build/test/:build/lib/rhino.jar:build/lib/rhino1_7R5pre/js.jar:lib/*:$DAIKONDIR/daikon.jar daikon.Chicory --comparability-file=TestRunner.decls-DynComp junit.textui.TestRunner com.google.javascript.jscomp.PeepholeFoldConstantsTest
+
+..... 
+
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.lang.reflect.Field.copy(Field.java:150)
+	at java.lang.reflect.ReflectAccess.copyField(ReflectAccess.java:144)
+	at sun.reflect.ReflectionFactory.copyField(ReflectionFactory.java:323)
+	at java.lang.Class.copyFields(Class.java:3115)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at daikon.chicory.DaikonVariableInfo.addClassVars(DaikonVariableInfo.java:464)
+	at daikon.chicory.DaikonVariableInfo.addChildNodes(DaikonVariableInfo.java:1159)
+	at daikon.chicory.DaikonVariableInfo.addClassVars(DaikonVariableInfo.java:538)
+	at daikon.chicory.RootInfo.exit_process(RootInfo.java:74)
+	at daikon.chicory.Runtime.process_new_classes(Runtime.java:457)
+	at daikon.chicory.Runtime.exit(Runtime.java:332)
+	at junit.runner.BaseTestRunner.loadSuiteClass(BaseTestRunner.java:207)
+	at junit.runner.BaseTestRunner.getTest(BaseTestRunner.java:100)
+	at junit.textui.TestRunner.start(TestRunner.java:179)
+	at junit.textui.TestRunner.main(TestRunner.java:138)
+Warning: Target exited with 1 status
+```
+
 
 Another exception occurs many times during the daikon.Chicory's execution:
 ```
