@@ -1,5 +1,4 @@
 # Closure
-It needs around 12G memory for generating invariants using daikon.  
 Tried version 10f, `com.google.javascript.jscomp.PeepholeFoldConstantsTest` test.  
 Failed to generate invariants due to exception:
 ```
