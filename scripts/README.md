@@ -4,3 +4,4 @@ Here are some scripts for automatic tasks:
 3. [genInvs4Chart.sh](./genInvs4Chart.sh) is used to generate invariants for Lang.  
 4. [genInvs4Math.sh](./genInvs4Math.sh) is used to generate invariants for Math.  
 5. [outputInvs.sh](./outputInvs.sh) is used to select and output invariants.  
+6. [coverageTests.sh](./coverageTests.sh) is used to do coverage test for each test case and find the tests cases related to the buggy class.
