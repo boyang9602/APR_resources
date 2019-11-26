@@ -60,7 +60,11 @@ for bug_id in *; do
         continue;
     fi
     if [[ ! -d $root/$bug_id/coverages ]]; then
-        mkdir $root/$bug_id/coverages   
+        mkdir $root/$bug_id/coverages
+    else
+    	continue;
     fi
+    echo "running" > $root/$bug_id/coverages/status
     covTest $root/$bug_id/b
+    echo "finished" > $root/$bug_id/coverages/status
 done
