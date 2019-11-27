@@ -1,0 +1,4 @@
+org.joda.time.tz.TestCompiler::testCompile
+org.joda.time.tz.TestCompiler::test_2400_fromDay
+org.joda.time.tz.TestCompiler::testDateTimeZoneBuilder
+org.joda.time.tz.TestCompiler::test_2400_last
