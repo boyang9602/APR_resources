@@ -1,0 +1,3 @@
+org.apache.commons.math.distribution.PoissonDistributionTest::testDensities
+org.apache.commons.math.util.MathUtilsTest::testFactorial
+org.apache.commons.math.util.MathUtilsTest::testFactorialFail

@@ -1,0 +1,3 @@
+org.apache.commons.math.distribution.FDistributionTest::testLargeDegreesOfFreedom
+org.apache.commons.math.distribution.FDistributionTest::testSmallDegreesOfFreedom
+org.apache.commons.math.distribution.FDistributionTest::testInverseCumulativeProbabilities
