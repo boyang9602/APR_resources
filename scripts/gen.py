@@ -9,7 +9,7 @@ with open('metadata2.json', 'r') as f:
 
 for pro in metadata:
 	name = pro['name']
-	# os.mkdir(name)
+	os.mkdir(name)
 	for bug in pro['bugs']:
 		bid = bug['ID']
 		os.mkdir(f'{name}/{bid}')
