@@ -1,0 +1,2502 @@
+[
+  {
+    "name": "Lang",
+    "bugs": [
+      {
+        "ID": "44",
+        "patches": [
+          {
+            "ID": "Patch150",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.lang.NumberUtils"
+            ]
+          },
+          {
+            "ID": "Patch21",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.lang.NumberUtils"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "51",
+        "patches": [
+          {
+            "ID": "Patch151",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "duplicated": true,
+            "modified_classes": [
+              "org.apache.commons.lang.BooleanUtils"
+            ]
+          },
+          {
+            "ID": "Patch23",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.lang.BooleanUtils"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "53",
+        "patches": [
+          {
+            "ID": "Patch152",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.lang.time.DateUtils"
+            ]
+          },
+          {
+            "ID": "Patch24",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.lang.time.DateUtils"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "58",
+        "patches": [
+          {
+            "ID": "Patch153",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.lang.math.NumberUtils"
+            ]
+          },
+          {
+            "ID": "Patch26",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.lang.math.NumberUtils"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "7",
+        "patches": [
+          {
+            "ID": "Patch190",
+            "correctness": "Correct",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.lang3.math.NumberUtils"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "24",
+        "patches": [
+          {
+            "ID": "Patch191",
+            "correctness": "Correct",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.lang3.math.NumberUtils"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "35",
+        "patches": [
+          {
+            "ID": "Patch192",
+            "correctness": "Correct",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.lang3.ArrayUtils"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "39",
+        "patches": [
+          {
+            "ID": "Patch193",
+            "correctness": "Incorrect",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.lang3.StringUtils"
+            ]
+          },
+          {
+            "ID": "Patch20",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.lang3.StringUtils"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "46",
+        "patches": [
+          {
+            "ID": "Patch22",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.lang.StringEscapeUtils"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "55",
+        "patches": [
+          {
+            "ID": "Patch25",
+            "correctness": "Correct",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.lang.time.StopWatch"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "57",
+        "patches": [
+          {
+            "ID": "PatchHDRepair1",
+            "correctness": "Correct",
+            "tool": "HDRepair",
+            "modified_classes": [
+              "org.apache.commons.lang.LocaleUtils"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "6",
+        "patches": [
+          {
+            "ID": "PatchHDRepair2",
+            "correctness": "Incorrect",
+            "tool": "HDRepair",
+            "modified_classes": [
+              "org.apache.commons.lang3.text.translate.CharSequenceTranslator"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Chart",
+    "bugs": [
+      {
+        "ID": "1",
+        "patches": [
+          {
+            "ID": "Patch1",
+            "correctness": "Incorrect",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer"
+            ]
+          },
+          {
+            "ID": "Patch2",
+            "correctness": "Incorrect",
+            "tool": "jKali",
+            "duplicated": true,
+            "modified_classes": [
+              "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "13",
+        "patches": [
+          {
+            "ID": "Patch10",
+            "correctness": "Incorrect",
+            "tool": "jKali",
+            "modified_classes": [
+              "org.jfree.chart.block.BorderArrangement"
+            ]
+          },
+          {
+            "ID": "Patch11",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.jfree.chart.block.BorderArrangement"
+            ]
+          },
+          {
+            "ID": "Patch89",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "duplicated": true,
+            "modified_classes": [
+              "org.jfree.chart.block.BorderArrangement"
+            ]
+          },
+          {
+            "ID": "Patch9",
+            "correctness": "Incorrect",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.jfree.chart.block.BorderArrangement"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "15",
+        "patches": [
+          {
+            "ID": "Patch12",
+            "correctness": "Incorrect",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.jfree.chart.JFreeChart"
+            ]
+          },
+          {
+            "ID": "Patch13",
+            "correctness": "Incorrect",
+            "tool": "jKali",
+            "modified_classes": [
+              "org.jfree.chart.plot.PiePlot3D"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "21",
+        "patches": [
+          {
+            "ID": "Patch14",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.jfree.data.Range"
+            ]
+          },
+          {
+            "ID": "Patch91",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.jfree.data.Range"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "25",
+        "patches": [
+          {
+            "ID": "Patch15",
+            "correctness": "Incorrect",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.jfree.data.statistics.DefaultStatisticalCategoryDataset"
+            ]
+          },
+          {
+            "ID": "Patch16",
+            "correctness": "Incorrect",
+            "tool": "jKali",
+            "modified_classes": [
+              "org.jfree.chart.renderer.category.StatisticalBarRenderer"
+            ]
+          },
+          {
+            "ID": "Patch17",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.jfree.chart.renderer.category.StatisticalBarRenderer"
+            ]
+          },
+          {
+            "ID": "Patch92",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "duplicated": true,
+            "modified_classes": [
+              "org.jfree.chart.renderer.category.StatisticalBarRenderer"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "26",
+        "patches": [
+          {
+            "ID": "Patch18",
+            "correctness": "Incorrect",
+            "tool": "jKali",
+            "modified_classes": [
+              "org.jfree.chart.plot.CategoryPlot"
+            ]
+          },
+          {
+            "ID": "Patch19",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.jfree.chart.axis.AxisCollection"
+            ]
+          },
+          {
+            "ID": "Patch93",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.jfree.chart.plot.CategoryPlot"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "14",
+        "patches": [
+          {
+            "ID": "Patch188",
+            "correctness": "Correct",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.jfree.chart.plot.CategoryPlot",
+              "org.jfree.chart.plot.XYPlot"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "19",
+        "patches": [
+          {
+            "ID": "Patch189",
+            "correctness": "Correct",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.jfree.chart.plot.CategoryPlot"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "3",
+        "patches": [
+          {
+            "ID": "Patch3",
+            "correctness": "Correct",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.jfree.data.time.TimeSeries"
+            ]
+          },
+          {
+            "ID": "Patch4",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.jfree.data.time.TimeSeries"
+            ]
+          },
+          {
+            "ID": "Patch85",
+            "correctness": "Unknown",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.jfree.data.time.TimeSeries"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "5",
+        "patches": [
+          {
+            "ID": "Patch5",
+            "correctness": "Incorrect",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.jfree.data.xy.XYSeries"
+            ]
+          },
+          {
+            "ID": "Patch6",
+            "correctness": "Incorrect",
+            "tool": "jKali",
+            "duplicated": true,
+            "modified_classes": [
+              "org.jfree.data.xy.XYSeries"
+            ]
+          },
+          {
+            "ID": "Patch7",
+            "correctness": "Correct",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.jfree.data.xy.XYSeries"
+            ]
+          },
+          {
+            "ID": "Patch87",
+            "correctness": "Unknown",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.jfree.data.xy.XYSeries"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "7",
+        "patches": [
+          {
+            "ID": "Patch8",
+            "correctness": "Incorrect",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.jfree.data.time.TimePeriodValues"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "4",
+        "patches": [
+          {
+            "ID": "Patch86",
+            "correctness": "Unknown",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.jfree.chart.plot.XYPlot"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "9",
+        "patches": [
+          {
+            "ID": "Patch88",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.jfree.data.time.TimeSeries"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "17",
+        "patches": [
+          {
+            "ID": "Patch90",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.jfree.data.time.TimeSeries"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Closure",
+    "bugs": [
+      {
+        "ID": "10",
+        "patches": [
+          {
+            "ID": "Patch100",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "12",
+        "patches": [
+          {
+            "ID": "Patch101",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "14",
+        "patches": [
+          {
+            "ID": "Patch102",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.jscomp.ControlFlowAnalysis"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "15",
+        "patches": [
+          {
+            "ID": "Patch103",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "16",
+        "patches": [
+          {
+            "ID": "Patch104",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "17",
+        "patches": [
+          {
+            "ID": "Patch105",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.jscomp.TypedScopeCreator"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "18",
+        "patches": [
+          {
+            "ID": "Patch106",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "20",
+        "patches": [
+          {
+            "ID": "Patch107",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "21",
+        "patches": [
+          {
+            "ID": "Patch108",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.jscomp.CheckSideEffects"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "22",
+        "patches": [
+          {
+            "ID": "Patch109",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.jscomp.CheckSideEffects"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "26",
+        "patches": [
+          {
+            "ID": "Patch110",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "28",
+        "patches": [
+          {
+            "ID": "Patch111",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "29",
+        "patches": [
+          {
+            "ID": "Patch112",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "30",
+        "patches": [
+          {
+            "ID": "Patch113",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "31",
+        "patches": [
+          {
+            "ID": "Patch114",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "33",
+        "patches": [
+          {
+            "ID": "Patch115",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.jstype.PrototypeObjectType"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "35",
+        "patches": [
+          {
+            "ID": "Patch116",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.jstype.JSTypeRegistry"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "36",
+        "patches": [
+          {
+            "ID": "Patch117",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "38",
+        "patches": [
+          {
+            "ID": "Patch118",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.jscomp.CodeConsumer"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "40",
+        "patches": [
+          {
+            "ID": "Patch119",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "45",
+        "patches": [
+          {
+            "ID": "Patch120",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "49",
+        "patches": [
+          {
+            "ID": "Patch121",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "50",
+        "patches": [
+          {
+            "ID": "Patch122",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "55",
+        "patches": [
+          {
+            "ID": "Patch123",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.jscomp.FunctionRewriter"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "60",
+        "patches": [
+          {
+            "ID": "Patch124",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "61",
+        "patches": [
+          {
+            "ID": "Patch125",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "62",
+        "patches": [
+          {
+            "ID": "Patch126",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.jscomp.LightweightMessageFormatter"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "63",
+        "patches": [
+          {
+            "ID": "Patch127",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.jscomp.LightweightMessageFormatter"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "66",
+        "patches": [
+          {
+            "ID": "Patch128",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.jscomp.TypeCheck"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "67",
+        "patches": [
+          {
+            "ID": "Patch129",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "72",
+        "patches": [
+          {
+            "ID": "Patch130",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "75",
+        "patches": [
+          {
+            "ID": "Patch131",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "76",
+        "patches": [
+          {
+            "ID": "Patch132",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "78",
+        "patches": [
+          {
+            "ID": "Patch133",
+            "correctness": "Correct",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.jscomp.PeepholeFoldConstants"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "111",
+        "patches": [
+          {
+            "ID": "Patch134",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.testing.Asserts"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "113",
+        "patches": [
+          {
+            "ID": "Patch135",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.jscomp.ProcessClosurePrimitives"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "114",
+        "patches": [
+          {
+            "ID": "Patch136",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "115",
+        "patches": [
+          {
+            "ID": "Patch137",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "116",
+        "patches": [
+          {
+            "ID": "Patch138",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "119",
+        "patches": [
+          {
+            "ID": "Patch139",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.jscomp.GlobalNamespace"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "120",
+        "patches": [
+          {
+            "ID": "Patch140",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "121",
+        "patches": [
+          {
+            "ID": "Patch141",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "124",
+        "patches": [
+          {
+            "ID": "Patch142",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "126",
+        "patches": [
+          {
+            "ID": "Patch143",
+            "correctness": "Correct",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.jscomp.MinimizeExitPoints"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "127",
+        "patches": [
+          {
+            "ID": "Patch144",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "129",
+        "patches": [
+          {
+            "ID": "Patch145",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "130",
+        "patches": [
+          {
+            "ID": "Patch146",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "131",
+        "patches": [
+          {
+            "ID": "Patch147",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "132",
+        "patches": [
+          {
+            "ID": "Patch148",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "133",
+        "patches": [
+          {
+            "ID": "Patch149",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.jscomp.parsing.JsDocInfoParser"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "1",
+        "patches": [
+          {
+            "ID": "Patch94",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "2",
+        "patches": [
+          {
+            "ID": "Patch95",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.jscomp.TypeCheck"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "3",
+        "patches": [
+          {
+            "ID": "Patch96",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "5",
+        "patches": [
+          {
+            "ID": "Patch97",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "7",
+        "patches": [
+          {
+            "ID": "Patch98",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.testing.Asserts"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "8",
+        "patches": [
+          {
+            "ID": "Patch99",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "com.google.javascript.rhino.Node"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Math",
+    "bugs": [
+      {
+        "ID": "2",
+        "patches": [
+          {
+            "ID": "Patch154",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math3.distribution.AbstractIntegerDistribution"
+            ]
+          },
+          {
+            "ID": "Patch27",
+            "correctness": "Incorrect",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.apache.commons.math3.distribution.AbstractIntegerDistribution"
+            ]
+          },
+          {
+            "ID": "Patch28",
+            "correctness": "Incorrect",
+            "tool": "jKali",
+            "duplicated": true,
+            "modified_classes": [
+              "org.apache.commons.math3.distribution.AbstractIntegerDistribution"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "4",
+        "patches": [
+          {
+            "ID": "Patch155",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math3.geometry.euclidean.twod.Line"
+            ]
+          },
+          {
+            "ID": "Patch195",
+            "correctness": "Correct",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.math3.geometry.euclidean.threed.SubLine",
+              "org.apache.commons.math3.geometry.euclidean.twod.SubLine"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "7",
+        "patches": [
+          {
+            "ID": "Patch156",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math3.ode.AbstractIntegrator"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "24",
+        "patches": [
+          {
+            "ID": "Patch157",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math3.analysis.FunctionUtils"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "28",
+        "patches": [
+          {
+            "ID": "Patch158",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math3.optimization.linear.SimplexSolver"
+            ]
+          },
+          {
+            "ID": "Patch198",
+            "correctness": "Incorrect",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.math3.optimization.linear.SimplexSolver"
+            ]
+          },
+          {
+            "ID": "Patch32",
+            "correctness": "Incorrect",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.apache.commons.math3.optimization.linear.SimplexSolver"
+            ]
+          },
+          {
+            "ID": "Patch33",
+            "correctness": "Incorrect",
+            "tool": "jKali",
+            "modified_classes": [
+              "org.apache.commons.math3.optimization.linear.SimplexSolver"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "33",
+        "patches": [
+          {
+            "ID": "Patch159",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math3.optimization.linear.SimplexTableau"
+            ]
+          },
+          {
+            "ID": "Patch36",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math3.optimization.linear.SimplexTableau"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "39",
+        "patches": [
+          {
+            "ID": "Patch160",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "40",
+        "patches": [
+          {
+            "ID": "Patch161",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver"
+            ]
+          },
+          {
+            "ID": "Patch37",
+            "correctness": "Incorrect",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver"
+            ]
+          },
+          {
+            "ID": "Patch38",
+            "correctness": "Incorrect",
+            "tool": "jKali",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver"
+            ]
+          },
+          {
+            "ID": "Patch39",
+            "correctness": "Unknown",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "41",
+        "patches": [
+          {
+            "ID": "Patch162",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math.stat.descriptive.moment.Mean"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "42",
+        "patches": [
+          {
+            "ID": "Patch163",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math.optimization.linear.SimplexTableau"
+            ]
+          },
+          {
+            "ID": "Patch40",
+            "correctness": "Unknown",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.optimization.linear.SimplexTableau"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "44",
+        "patches": [
+          {
+            "ID": "Patch164",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math.ode.AbstractIntegrator"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "49",
+        "patches": [
+          {
+            "ID": "Patch165",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math.linear.OpenMapRealVector"
+            ]
+          },
+          {
+            "ID": "Patch41",
+            "correctness": "Incorrect",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.apache.commons.math.linear.OpenMapRealVector"
+            ]
+          },
+          {
+            "ID": "Patch42",
+            "correctness": "Incorrect",
+            "tool": "jKali",
+            "duplicated": true,
+            "modified_classes": [
+              "org.apache.commons.math.linear.OpenMapRealVector"
+            ]
+          },
+          {
+            "ID": "Patch43",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.linear.OpenMapRealVector"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "50",
+        "patches": [
+          {
+            "ID": "Patch166",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.BaseSecantSolver"
+            ]
+          },
+          {
+            "ID": "Patch44",
+            "correctness": "Correct",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.BaseSecantSolver"
+            ]
+          },
+          {
+            "ID": "Patch45",
+            "correctness": "Correct",
+            "tool": "jKali",
+            "duplicated": true,
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.BaseSecantSolver"
+            ]
+          },
+          {
+            "ID": "Patch46",
+            "correctness": "Correct",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.BaseSecantSolver"
+            ]
+          },
+          {
+            "ID": "PatchHDRepair5",
+            "correctness": "Incorrect",
+            "tool": "HDRepair",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.BaseSecantSolver"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "57",
+        "patches": [
+          {
+            "ID": "Patch167",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math.stat.clustering.EuclideanIntegerPoint"
+            ]
+          },
+          {
+            "ID": "Patch48",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.stat.clustering.EuclideanIntegerPoint"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "58",
+        "patches": [
+          {
+            "ID": "Patch168",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.function.Gaussian"
+            ]
+          },
+          {
+            "ID": "Patch49",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "69",
+        "patches": [
+          {
+            "ID": "Patch169",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "duplicated": true,
+            "modified_classes": [
+              "org.apache.commons.math.stat.correlation.PearsonsCorrelation"
+            ]
+          },
+          {
+            "ID": "Patch50",
+            "correctness": "Unknown",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.stat.correlation.PearsonsCorrelation"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "73",
+        "patches": [
+          {
+            "ID": "Patch170",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "duplicated": true,
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl"
+            ]
+          },
+          {
+            "ID": "Patch201",
+            "correctness": "Incorrect",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.BrentSolver"
+            ]
+          },
+          {
+            "ID": "Patch54",
+            "correctness": "Correct",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.BrentSolver"
+            ]
+          },
+          {
+            "ID": "Patch55",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "78",
+        "patches": [
+          {
+            "ID": "Patch171",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.BrentSolver"
+            ]
+          },
+          {
+            "ID": "Patch56",
+            "correctness": "Unknown",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.apache.commons.math.ode.events.EventState"
+            ]
+          },
+          {
+            "ID": "Patch57",
+            "correctness": "Unknown",
+            "tool": "jKali",
+            "duplicated": true,
+            "modified_classes": [
+              "org.apache.commons.math.ode.events.EventState"
+            ]
+          },
+          {
+            "ID": "Patch58",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.BrentSolver"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "80",
+        "patches": [
+          {
+            "ID": "Patch172",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "duplicated": true,
+            "modified_classes": [
+              "org.apache.commons.math.linear.EigenDecompositionImpl"
+            ]
+          },
+          {
+            "ID": "Patch59",
+            "correctness": "Incorrect",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.apache.commons.math.linear.EigenDecompositionImpl"
+            ]
+          },
+          {
+            "ID": "Patch60",
+            "correctness": "Unknown",
+            "tool": "jKali",
+            "modified_classes": [
+              "org.apache.commons.math.linear.EigenDecompositionImpl"
+            ]
+          },
+          {
+            "ID": "Patch61",
+            "correctness": "Unknown",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.linear.EigenDecompositionImpl"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "81",
+        "patches": [
+          {
+            "ID": "Patch173",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math.linear.EigenDecompositionImpl"
+            ]
+          },
+          {
+            "ID": "Patch202",
+            "correctness": "Incorrect",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.math.linear.EigenDecompositionImpl"
+            ]
+          },
+          {
+            "ID": "Patch62",
+            "correctness": "Incorrect",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.apache.commons.math.linear.EigenDecompositionImpl"
+            ]
+          },
+          {
+            "ID": "Patch63",
+            "correctness": "Incorrect",
+            "tool": "jKali",
+            "modified_classes": [
+              "org.apache.commons.math.linear.EigenDecompositionImpl"
+            ]
+          },
+          {
+            "ID": "Patch64",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.linear.EigenDecompositionImpl"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "85",
+        "patches": [
+          {
+            "ID": "Patch174",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils"
+            ]
+          },
+          {
+            "ID": "Patch204",
+            "correctness": "Correct",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils"
+            ]
+          },
+          {
+            "ID": "Patch70",
+            "correctness": "Unknown",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils"
+            ]
+          },
+          {
+            "ID": "Patch71",
+            "correctness": "Unknown",
+            "tool": "jKali",
+            "duplicated": true,
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils"
+            ]
+          },
+          {
+            "ID": "Patch72",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils"
+            ]
+          },
+          {
+            "ID": "PatchHDRepair9",
+            "correctness": "Incorrect",
+            "tool": "HDRepair",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "87",
+        "patches": [
+          {
+            "ID": "Patch175",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math.optimization.linear.SimplexTableau"
+            ]
+          },
+          {
+            "ID": "Patch73",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.optimization.linear.SimplexTableau"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "88",
+        "patches": [
+          {
+            "ID": "Patch176",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math.optimization.linear.SimplexTableau"
+            ]
+          },
+          {
+            "ID": "Patch74",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.optimization.linear.SimplexTableau"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "105",
+        "patches": [
+          {
+            "ID": "Patch177",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.apache.commons.math.stat.regression.SimpleRegression"
+            ]
+          },
+          {
+            "ID": "Patch79",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.stat.regression.SimpleRegression"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "3",
+        "patches": [
+          {
+            "ID": "Patch194",
+            "correctness": "Correct",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.math3.util.MathArrays"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "5",
+        "patches": [
+          {
+            "ID": "Patch196",
+            "correctness": "Correct",
+            "tool": "ACS",
+            "duplicated": true,
+            "modified_classes": [
+              "org.apache.commons.math3.complex.Complex"
+            ]
+          },
+          {
+            "ID": "Patch29",
+            "correctness": "Correct",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.apache.commons.math3.complex.Complex"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "25",
+        "patches": [
+          {
+            "ID": "Patch197",
+            "correctness": "Correct",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.math3.optimization.fitting.HarmonicFitter"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "35",
+        "patches": [
+          {
+            "ID": "Patch199",
+            "correctness": "Correct",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.math3.genetics.ElitisticListPopulation"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "61",
+        "patches": [
+          {
+            "ID": "Patch200",
+            "correctness": "Correct",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.math.distribution.PoissonDistributionImpl"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "82",
+        "patches": [
+          {
+            "ID": "Patch203",
+            "correctness": "Correct",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.math.optimization.linear.SimplexSolver"
+            ]
+          },
+          {
+            "ID": "Patch65",
+            "correctness": "Incorrect",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.apache.commons.math.optimization.linear.SimplexSolver"
+            ]
+          },
+          {
+            "ID": "Patch66",
+            "correctness": "Incorrect",
+            "tool": "jKali",
+            "duplicated": true,
+            "modified_classes": [
+              "org.apache.commons.math.optimization.linear.SimplexSolver"
+            ]
+          },
+          {
+            "ID": "Patch67",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.optimization.linear.SimplexSolver"
+            ]
+          },
+          {
+            "ID": "PatchHDRepair8",
+            "correctness": "Incorrect",
+            "tool": "HDRepair",
+            "modified_classes": [
+              "org.apache.commons.math.optimization.linear.SimplexSolver"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "89",
+        "patches": [
+          {
+            "ID": "Patch205",
+            "correctness": "Correct",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.math.stat.Frequency"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "90",
+        "patches": [
+          {
+            "ID": "Patch206",
+            "correctness": "Correct",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.math.stat.Frequency"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "93",
+        "patches": [
+          {
+            "ID": "Patch207",
+            "correctness": "Correct",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.math.util.MathUtils"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "97",
+        "patches": [
+          {
+            "ID": "Patch208",
+            "correctness": "Incorrect",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.BrentSolver"
+            ]
+          },
+          {
+            "ID": "Patch77",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.BrentSolver"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "99",
+        "patches": [
+          {
+            "ID": "Patch209",
+            "correctness": "Correct",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.apache.commons.math.util.MathUtils"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "8",
+        "patches": [
+          {
+            "ID": "Patch30",
+            "correctness": "Incorrect",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.apache.commons.math3.distribution.DiscreteDistribution"
+            ]
+          },
+          {
+            "ID": "Patch31",
+            "correctness": "Incorrect",
+            "tool": "jKali",
+            "duplicated": true,
+            "modified_classes": [
+              "org.apache.commons.math3.distribution.DiscreteDistribution"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "32",
+        "patches": [
+          {
+            "ID": "Patch34",
+            "correctness": "Incorrect",
+            "tool": "jKali",
+            "modified_classes": [
+              "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet"
+            ]
+          },
+          {
+            "ID": "Patch35",
+            "correctness": "Unknown",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math3.geometry.partitioning.AbstractRegion"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "53",
+        "patches": [
+          {
+            "ID": "Patch47",
+            "correctness": "Correct",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.apache.commons.math.complex.Complex"
+            ]
+          },
+          {
+            "ID": "PatchHDRepair6",
+            "correctness": "Incorrect",
+            "tool": "HDRepair",
+            "modified_classes": [
+              "org.apache.commons.math.complex.Complex"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "70",
+        "patches": [
+          {
+            "ID": "Patch51",
+            "correctness": "Correct",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.BisectionSolver"
+            ]
+          },
+          {
+            "ID": "PatchHDRepair7",
+            "correctness": "Correct",
+            "tool": "HDRepair",
+            "duplicated": true,
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.BisectionSolver"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "71",
+        "patches": [
+          {
+            "ID": "Patch52",
+            "correctness": "Unknown",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.apache.commons.math.ode.events.EventState"
+            ]
+          },
+          {
+            "ID": "Patch53",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.analysis.solvers.BrentSolver"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "84",
+        "patches": [
+          {
+            "ID": "Patch68",
+            "correctness": "Incorrect",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.apache.commons.math.optimization.direct.MultiDirectional"
+            ]
+          },
+          {
+            "ID": "Patch69",
+            "correctness": "Incorrect",
+            "tool": "jKali",
+            "modified_classes": [
+              "org.apache.commons.math.optimization.direct.MultiDirectional"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "95",
+        "patches": [
+          {
+            "ID": "Patch75",
+            "correctness": "Incorrect",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.apache.commons.math.distribution.FDistributionImpl"
+            ]
+          },
+          {
+            "ID": "Patch76",
+            "correctness": "Incorrect",
+            "tool": "jKali",
+            "modified_classes": [
+              "org.apache.commons.math.distribution.FDistributionImpl"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "104",
+        "patches": [
+          {
+            "ID": "Patch78",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.apache.commons.math.special.Gamma"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "22",
+        "patches": [
+          {
+            "ID": "PatchHDRepair3",
+            "correctness": "Incorrect",
+            "tool": "HDRepair",
+            "modified_classes": [
+              "org.apache.commons.math3.distribution.FDistribution"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "34",
+        "patches": [
+          {
+            "ID": "PatchHDRepair4",
+            "correctness": "Correct",
+            "tool": "HDRepair",
+            "modified_classes": [
+              "org.apache.commons.math3.genetics.ListPopulation"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Time",
+    "bugs": [
+      {
+        "ID": "4",
+        "patches": [
+          {
+            "ID": "Patch180",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.joda.time.Partial"
+            ]
+          },
+          {
+            "ID": "Patch80",
+            "correctness": "Incorrect",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.joda.time.field.ZeroIsMaxDateTimeField"
+            ]
+          },
+          {
+            "ID": "Patch81",
+            "correctness": "Incorrect",
+            "tool": "jKali",
+            "modified_classes": [
+              "org.joda.time.field.ZeroIsMaxDateTimeField"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "7",
+        "patches": [
+          {
+            "ID": "Patch181",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.joda.time.format.DateTimeParserBucket"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "11",
+        "patches": [
+          {
+            "ID": "Patch182",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.joda.time.tz.DateTimeZoneBuilder"
+            ]
+          },
+          {
+            "ID": "Patch82",
+            "correctness": "Incorrect",
+            "tool": "jGenprog",
+            "modified_classes": [
+              "org.joda.time.tz.DateTimeZoneBuilder"
+            ]
+          },
+          {
+            "ID": "Patch83",
+            "correctness": "Incorrect",
+            "tool": "jKali",
+            "duplicated": true,
+            "modified_classes": [
+              "org.joda.time.tz.DateTimeZoneBuilder"
+            ]
+          },
+          {
+            "ID": "Patch84",
+            "correctness": "Incorrect",
+            "tool": "Nopol2015",
+            "modified_classes": [
+              "org.joda.time.tz.DateTimeZoneBuilder"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "12",
+        "patches": [
+          {
+            "ID": "Patch183",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.joda.time.LocalDateTime"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "14",
+        "patches": [
+          {
+            "ID": "Patch184",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.joda.time.chrono.BasicMonthOfYearDateTimeField"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "16",
+        "patches": [
+          {
+            "ID": "Patch185",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.joda.time.format.DateTimeParserBucket"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "18",
+        "patches": [
+          {
+            "ID": "Patch186",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.joda.time.chrono.BasicChronology"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "19",
+        "patches": [
+          {
+            "ID": "Patch187",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.joda.time.DateTimeZone"
+            ]
+          },
+          {
+            "ID": "PatchHDRepair10",
+            "correctness": "Correct",
+            "tool": "HDRepair",
+            "modified_classes": [
+              "org.joda.time.DateTimeZone"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "15",
+        "patches": [
+          {
+            "ID": "Patch210",
+            "correctness": "Correct",
+            "tool": "ACS",
+            "modified_classes": [
+              "org.joda.time.field.FieldUtils"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mockito",
+    "bugs": [
+      {
+        "ID": "29",
+        "patches": [
+          {
+            "ID": "Patch178",
+            "correctness": "Correct",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.mockito.internal.matchers.Same"
+            ]
+          }
+        ]
+      },
+      {
+        "ID": "38",
+        "patches": [
+          {
+            "ID": "Patch179",
+            "correctness": "Incorrect",
+            "tool": "Nopol2017",
+            "modified_classes": [
+              "org.mockito.internal.matchers.Equals"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
