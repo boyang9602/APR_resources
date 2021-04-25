@@ -1,5 +1,5 @@
 #!/bin/bash
-patchesLoc=~/projects/DefectRepairing/tool/patches
+patchesLoc=~/DefectRepairing/tool/patches
 
 root=$(pwd)
 for bug_id in *; do
@@ -9,16 +9,19 @@ for bug_id in *; do
     if [ ! -d $bug_id ]; then
         continue;
     fi
-    cmd="cd $root/$bug_id/patches/"
+    cmd="cd $bug_id"
     echo $cmd
     eval $cmd
-    for patch in *; do
-        cmd="cd $root/$bug_id/patches/$patch"
+    for patch in *_Patch*; do
+        arr=(${patch//_/ })
+        cmd="cd $patch"
         echo $cmd
         eval $cmd
-        patchFile=$patchesLoc/$patch
-        bugFile=$(head -n 1 $patchFile | sed 's/diff .* Chart[[:digit:]]\+b\/\(.*\.java\) .*.java/\1/')
-        cmd="patch $bugFile $patchFile"
+        patchFile=$patchesLoc/${arr[1]}
+        cmd="patch -i $patchFile -p 1"
+        echo $cmd
+        eval $cmd
+        cmd="cd $root/$bug_id"
         echo $cmd
         eval $cmd
     done
