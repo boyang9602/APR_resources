@@ -34,6 +34,8 @@ for pro in metadata:
 
 		# check out buggy version, then another script will patch them using APR patches
 		for patch in bug['patches']:
+			if patch.get('duplicated', False):
+				continue
 			os.system(f'defects4j checkout -p {name} -v {bid}b -w {name}/{bid}/{name}{bid}_{patch["ID"]}')
 			# os.system(f'sed -i "/d4j.classes.modified/c\\d4j.classes.modified={",".join(patch["modified_classes"])}" {name}/{bid}/{name}{bid}_{patch["ID"]}/defects4j.build.properties')
 			os.system(f'echo {",".join(patch["modified_classes"])} >> {name}/{bid}/{name}{bid}_{patch["ID"]}/modified_classes')
