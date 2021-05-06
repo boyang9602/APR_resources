@@ -17,7 +17,7 @@ elif [[ $project = Lang ]]; then
 	path="$DAIKONDIR/daikon.jar:target/classes/:target/test-classes/:target/tests/$CLASSPATH:/home/ubuntu/launcher/"
 elif [[ $project = Mockito ]]; then
 	path="$DAIKONDIR/daikon.jar:target/classes/:target/test-classes/$CLASSPATH:/home/ubuntu/launcher/"
-elif [[ $project = Lang ]]; then
+elif [[ $project = Closure ]]; then
 	path="$DAIKONDIR/daikon.jar:build/classes/:build/test/$CLASSPATH:/home/ubuntu/launcher/"
 fi
 
