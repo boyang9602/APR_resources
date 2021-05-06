@@ -28,7 +28,7 @@ while read classes ; do
 	IFS=',' read -ra classArr <<< "$classes"
 	pptpattern=""
 	for class in "${classArr[@]}"; do
-		pptpattern="--ppt-select-pattern=^${class//\./\\\.} $pptpattern"
+		pptpattern="'--ppt-select-pattern=^${class//\./\\\.}' $pptpattern"
 	done
 
 	folder=ft_invariants_files$a
@@ -36,11 +36,11 @@ while read classes ; do
 		rm -rf $folder
 	fi
 	mkdir $folder
-	cmd="java -Xmx43G -cp $path daikon.DynComp '$pptpattern' --output-dir=$folder TestRunner $test_cases |& tee $folder/dyncomp-output.txt"
+	cmd="java -Xmx43G -cp $path daikon.DynComp $pptpattern --output-dir=$folder TestRunner $test_cases |& tee $folder/dyncomp-output.txt"
 	echo $cmd
 	echo $cmd >> $folder/cmds.txt
 	eval $cmd
-	cmd="java -Xmx43G -cp $path daikon.Chicory '$pptpattern' --heap-size=43G --comparability-file=$folder/TestRunner.decls-DynComp --output-dir=$folder TestRunner $test_cases |& tee $folder/chicory-output.txt"
+	cmd="java -Xmx43G -cp $path daikon.Chicory $pptpattern --heap-size=43G --comparability-file=$folder/TestRunner.decls-DynComp --output-dir=$folder TestRunner $test_cases |& tee $folder/chicory-output.txt"
 	echo $cmd
 	echo $cmd >> $folder/cmds.txt
 	eval $cmd
