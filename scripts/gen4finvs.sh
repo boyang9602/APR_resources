@@ -1,4 +1,6 @@
 #!/bin/bash
+defects4j compile
+
 test_cases=""
 raw=$(tail -n 1 defects4j.build.properties | sed 's/d4j\.tests\.trigger=\(.*\)/\1/')
 IFS=',' read -ra tcarr <<< $raw
@@ -20,8 +22,6 @@ elif [[ $project = Mockito ]]; then
 elif [[ $project = Closure ]]; then
 	path="$DAIKONDIR/daikon.jar:build/classes/:build/test/$CLASSPATH:/home/ubuntu/launcher/"
 fi
-
-defects4j compile
 
 a=0
 while read classes ; do
