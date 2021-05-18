@@ -8,7 +8,8 @@ for tc in ${tcarr[@]}; do
         test_cases="$test_cases$tc "
 done
 CLASSPATH=$(find "$PWD" -name '*.jar' -type f -printf ':%p\n' | sort -u | tr -d '\n')
-project=$(tail -n2 defects4j.build.properties | head -n1 | sed 's/d4j\.project\.id=\(.*\)/\1/')
+# project=$(tail -n2 defects4j.build.properties | head -n1 | sed 's/d4j\.project\.id=\(.*\)/\1/')
+project=$(cat defects4j.build.properties | grep project.id | cut -d'=' -f 2)
 if [[ $project = Chart ]]; then
 	path="$DAIKONDIR/daikon.jar:build/:build-tests/$CLASSPATH:/home/ubuntu/launcher/"
 elif [[ $project = Math ]]; then
