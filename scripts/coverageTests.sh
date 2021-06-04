@@ -42,7 +42,9 @@ covTest() {
             cmd="defects4j coverage -i instrument_classes -t $class::$_case"
             echo $cmd
             eval $cmd
-            mv coverage.xml coverages$a/${class}_SEP_${_case}_SEP_coverage.xml
+            if [[ $(tail -n 1 summary.csv | awk -F , '{print $2}') > 0 ]]; then
+                mv coverage.xml coverages$a/${class}_SEP_${_case}_SEP_coverage.xml
+            fi
         done < tests_list
         a=$((a+1))
     done < modified_classes
