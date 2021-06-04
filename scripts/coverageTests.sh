@@ -39,7 +39,7 @@ covTest() {
         fi
         while read -r line; do
             convTestCaseFormat $line
-            cmd="defects4j coverage -i $instrument_classes -t $class::$_case"
+            cmd="defects4j coverage -i instrument_classes -t $class::$_case"
             echo $cmd
             eval $cmd
             mv coverage.xml coverages$a/${class}_SEP_${_case}_SEP_coverage.xml
