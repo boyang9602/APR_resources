@@ -1,14 +1,11 @@
 #!/bin/bash
-# generate invariants using daikon for Chart project.
-# due to issue: https://github.com/codespecs/daikon/issues/203, the assert statement is not enabled.
 
 # the script is used for the below's folder structure:
-# Chart
+# project_name
 # --bug_id
-# ----fixed_project
-# ----buggy_project
-# ----patches
-# ------plausible_project_n
+# ----{project_name}{bug_id}b
+# ----{project_name}{bug_id}f
+# ----{project_name}{bug_id}_Patch{patch_id}
 
 convTestCaseFormat() {
     local testStr=$1
@@ -17,17 +14,8 @@ convTestCaseFormat() {
 }
 
 covTest() {
-    local path=$1
+    local path=$1/$2/*b
     cmd="cd ${path}"
-    echo $cmd
-    eval $cmd
-    cmd="git add ."
-    echo $cmd
-    eval $cmd
-    cmd="git stash"
-    echo $cmd
-    eval $cmd
-    cmd="git stash clear"
     echo $cmd
     eval $cmd
     cmd="defects4j compile"
@@ -39,16 +27,25 @@ covTest() {
     cmd="mv all_tests tests_list"
     echo $cmd
     eval $cmd
-    # read tests_list line by line
-    while read -r line; do
-        convTestCaseFormat $line
-        cmd="defects4j coverage -t $class::$_case"
-        echo $cmd
-        eval $cmd
-        if [[ $(tail -n 1 summary.csv | awk -F , '{print $2}') > 0 ]]; then
-            mv coverage.xml ../coverages/${class}_${_case}_coverage.xml
+    a=0
+    while read -r cls; do
+        IFS=',' read -ra ADDR <<< "$cls"
+        for i in "${ADDR[@]}"; do
+            echo $i >> instrument_classes
+        done
+        # read tests_list line by line
+        if [[ ! -d coverages$a ]]; then
+            mkdir coverages$a
         fi
-    done < tests_list
+        while read -r line; do
+            convTestCaseFormat $line
+            cmd="defects4j coverage -i $instrument_classes -t $class::$_case"
+            echo $cmd
+            eval $cmd
+            mv coverage.xml coverages$a/${class}_SEP_${_case}_SEP_coverage.xml
+        done < tests_list
+        a=$((a+1))
+    done < modified_classes
 }
 
 root=$(pwd)
@@ -56,15 +53,8 @@ for bug_id in *; do
     cmd="cd ${root}"
     echo $cmd
     eval $cmd
-    if [ ! -d $bug_id -o $bug_id = coverages ]; then
+    if [[ ! -d $bug_id ]]; then
         continue;
     fi
-    if [[ ! -d $root/$bug_id/coverages ]]; then
-        mkdir $root/$bug_id/coverages
-    else
-    	continue;
-    fi
-    echo "running" > $root/$bug_id/coverages/status
-    covTest $root/$bug_id/b
-    echo "finished" > $root/$bug_id/coverages/status
+    covTest $root $bug_id
 done
